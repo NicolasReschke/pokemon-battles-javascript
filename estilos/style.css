@@ -48,7 +48,7 @@ main {
 }
 
 .stadium {
-  background-image: url(../img/Stadium_2.webp);
+  background-image: url(../img/Stadium_2jpg.jpg);
   margin: 0 auto;
   max-width: 1000px;
   background-repeat: no-repeat;
@@ -58,4 +58,92 @@ main {
 
 .colspan {
   height: 60px;
+}
+
+.footerContainer {
+  width: 100%;
+  background-color: #212529;
+  margin-top: 15px;
+}
+.footerContainer .grupo1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+.footerContainer .grupo1 .cajaFooter figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footerContainer .grupo1 .cajaFooter figure img {
+  width: 60px;
+}
+.footerContainer .grupo1 .cajaFooter h5 {
+  color: antiquewhite;
+  margin-bottom: 25px;
+  font-size: 20px;
+  align-items: center;
+}
+.footerContainer .grupo1 .cajaFooter .parrafoFooter {
+  color: antiquewhite;
+  margin-bottom: 10px;
+}
+.footerContainer .grupo1 .cajaFooter .redes {
+  text-align: center;
+}
+.footerContainer .grupo1 .cajaFooter .redes a {
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: antiquewhite;
+  margin-right: 10px;
+  background-color: rgb(255, 0, 0);
+  text-align: center;
+  transition: all 300ms ease;
+}
+.footerContainer .grupo1 .cajaFooter .redes a:hover {
+  color: rgb(0, 0, 0);
+}
+.footerContainer .grupo2 {
+  background-color: black;
+  padding: 15px 10px;
+  text-align: center;
+  color: antiquewhite;
+}
+
+.logoFooter {
+  display: inline-block;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  line-height: 45px;
+  color: antiquewhite;
+  margin-right: 10px;
+  background-color: rgb(255, 0, 0);
+  text-align: center;
+  transition: all 300ms ease;
+  border-radius: 5px;
+}
+.logoFooter:hover {
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 320px) {
+  .footerContainer .grupo1 {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    padding: 10px 0px;
+    text-align: center;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */

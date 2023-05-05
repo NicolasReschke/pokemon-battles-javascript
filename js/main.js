@@ -260,7 +260,7 @@ function attack(move, attacker, receiver, hp, owner){
 function checkWinner(hp){
     let f = (pk1.hp <= 0) ? pk1 : (pk2.hp <= 0) ? pk2 : false;
     if(f){
-        alert('GAME OVER: ' + f.name +' fainted!');
+        alert('GAME OVER: ' + f.name +' derrotado!');
         document.getElementById(hp).innerHTML = '<p>HP: 0/' + f.fullhp + '</p>';
         setTimeout(function(){
             location.reload();
