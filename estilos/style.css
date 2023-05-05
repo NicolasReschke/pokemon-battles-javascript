@@ -1,1 +1,61 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+}
+
+td {
+  width: 320px;
+}
+td img {
+  width: 125px;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin-top: 5px;
+  border-radius: 15px;
+}
+
+p {
+  font-family: consolas;
+  background-color: rgba(255, 0, 0, 0.644);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+table.table {
+  margin: 0 auto;
+}
+
+.refresh {
+  background-color: rgba(255, 0, 0, 0.644);
+  width: 100%;
+  height: 50px;
+  margin: 20px 0;
+}
+
+main {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stadium {
+  background-image: url(../img/Stadium_2.webp);
+  margin: 0 auto;
+  max-width: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.colspan {
+  height: 60px;
+}/*# sourceMappingURL=style.css.map */
