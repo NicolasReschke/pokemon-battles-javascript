@@ -64,7 +64,7 @@ let pkmList = [
         "https://img.pokemondb.net/sprites/black-white/anim/normal/machamp.gif", 
         "https://img.pokemondb.net/sprites/black-white/anim/back-normal/machamp.gif",
         384, [
-        ["Brick break", "fight", 75, 0.95],
+        ["Brick break", "fight", 85, 0.95],
         ["Heavy slam", "steel", 85, 0.95],
         ["Rock Slide", "rock", 75, 0.90],
         ["Earthquake", "ground", 100, 0.95]
@@ -115,7 +115,7 @@ let pkmList = [
         "https://img.pokemondb.net/sprites/black-white/anim/back-normal/dragonite.gif",
         386, [
         ["Dragon claw", "dragon", 80, 0.95],
-        ["Wing attack", "fight", 60, 0.95],
+        ["Wing attack", "fly", 60, 0.95],
         ["Hurricane", "fly", 110, 0.50],
         ["Hyper beam", "normal", 150, 0.33]
     ]],
@@ -200,7 +200,7 @@ document.getElementById('hp2').appendChild(hp2);
 pk1.moves.forEach((move, i) => {
     const btn = document.getElementById(`m${i}`);
     btn.addEventListener('click', function(e) {
-        attack(move, pk1, pk2, 'hp2', '');
+        attack(move, pk1, pk2, 'hp2', 'Your ');
         setTimeout(attack, 2000, pk2.moves[Math.floor(Math.random() * 3)], pk2, pk1, 'hp1', 'Rival ');
     });
 });

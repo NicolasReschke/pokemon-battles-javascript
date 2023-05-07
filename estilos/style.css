@@ -9,22 +9,8 @@ main {
   text-align: center;
 }
 
-.btn {
-  width: 100%;
-  height: 40px;
-  margin-top: 5px;
-  border-radius: 15px;
-}
-
-p {
-  font-family: consolas;
-  background-color: rgba(255, 0, 0, 0.644);
-  font-weight: bolder;
-  font-size: 20px;
-}
-
-.titulos {
-  text-align: center;
+.stadium {
+  background-image: url(https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/0032398f86ea753194c5eeba97eccda2-1627249600/ExportBackgroundnomoveclound/draw-a-pixel-pokemon-battle-background.gif);
 }
 
 .general {
@@ -32,22 +18,32 @@ p {
   margin: 0 auto;
 }
 
+.titulos {
+  text-align: center;
+}
+
+p {
+  font-family: consolas;
+  background-color: rgba(255, 110, 110, 0.678);
+  font-weight: bolder;
+  font-size: 20px;
+}
+
 .stadium {
   height: 100%;
-  background-image: url(https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/attachments/delivery/asset/0032398f86ea753194c5eeba97eccda2-1627249600/ExportBackgroundnomoveclound/draw-a-pixel-pokemon-battle-background.gif);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .colspan {
-  margin: 15px auto;
+  margin: 25px auto;
   height: 50px;
   padding: 5px;
 }
 
 .pokemones {
-  margin: 0 auto;
+  margin: 5px auto;
   display: grid;
 }
 
@@ -60,12 +56,12 @@ p {
   width: 50%;
 }
 .pokemon1 img {
-  min-width: 150px;
-  height: 160px;
+  width: 150px;
+  height: 140px;
 }
 
 .pokemon2 {
-  margin-top: 50px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,15 +71,38 @@ p {
   width: 50%;
 }
 .pokemon2 img {
-  min-width: 150px;
-  height: 160px;
+  width: 130px;
+  height: 120px;
+}
+
+.botones {
+  margin-top: 10px;
+}
+
+.btn {
+  width: 80%;
+  height: 30px;
+  margin-bottom: 5px;
+  border-radius: 15px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  color: rgb(255, 255, 255);
+  background: hsla(0, 0%, 0%, 0.322);
+  will-change: transform;
+  transform: translateY(-4px);
+  transition: transform 800ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
 
 .refresh {
   background-color: rgba(255, 0, 0, 0.644);
   width: 100%;
   height: 50px;
-  margin: 20px 0;
+  margin: 0 auto;
+}
+
+.hp1, .hp2 {
+  border-style: ridge;
+  border-radius: 5px;
 }
 
 .footerContainer {
