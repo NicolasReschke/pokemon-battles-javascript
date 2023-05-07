@@ -1,7 +1,8 @@
 class Pokemon{
-    constructor(name, sprite, hp, moves){
+    constructor(name, sprite, sprite2, hp, moves){
         this.name = name;
         this.sprite = sprite;
+        this.sprite2 = sprite2;
         this.hp = hp;
         this.fullhp = hp;
         this.moves = moves;
@@ -9,36 +10,146 @@ class Pokemon{
 }
 
 let pkmList = [
-    ["Charizard", "https://img.pokemondb.net/sprites/black-white/normal/charizard.png", 360, [
-        ["Flamethrower", "fire", 95, 0.95],
+    ["Venusaur",
+        "https://img.pokemondb.net/sprites/black-white/anim/normal/venusaur-f.gif", 
+        "https://img.pokemondb.net/sprites/black-white/anim/back-normal/venusaur.gif",
+        364, [
+        ["Frenzy plant", "grass", 90, 0.95],
+        ["Sludge wave", "poison", 90, 0.95],
+        ["Earthquake", "ground", 100, 0.95],
+        ["Hyper Beam", "normal", 150, 0.33]
+    ]],
+    
+    ["Charizard",
+        "https://img.pokemondb.net/sprites/black-white/anim/normal/charizard.gif", 
+        "https://img.pokemondb.net/sprites/black-white/anim/back-normal/charizard.gif",
+        360, [
+        ["Flamethrower", "fire", 90, 0.95],
         ["Dragon claw", "dragon", 80, 0.95],
-        ["Air slash", "fly", 75, 0.85],
-        ["Slash", "normal", 70, 0.95]
+        ["Air slash", "fly", 75, 0.95],
+        ["Thunder Punch", "electric", 75, 0.95]
     ]],
 
-    ["Blastoise", "https://img.pokemondb.net/sprites/black-white/normal/blastoise.png", 362, [
+    ["Blastoise",
+        "https://img.pokemondb.net/sprites/black-white/anim/normal/blastoise.gif", 
+        "https://img.pokemondb.net/sprites/black-white/anim/back-normal/blastoise.gif",
+        362, [
         ["Surf", "water", 90, 0.95],
-        ["Crunch", "normal", 80, 0.95],
+        ["Crunch", "dark", 80, 0.95],
         ["Ice Punch", "ice", 75, 0.95],
         ["Flash cannon", "steel", 80, 0.95]
     ]],
 
-    ["Venusaur", "https://img.pokemondb.net/sprites/black-white/normal/venusaur.png", 364, [
-        ["Petal blizzard", "grass", 90, 0.95],
+    ["Pikachu",
+        "https://img.pokemondb.net/sprites/black-white/anim/normal/pikachu-f.gif", 
+        "https://img.pokemondb.net/sprites/black-white/anim/back-normal/pikachu.gif",
+        274, [
+        ["Thunderbolt", "electric", 90, 0.95],
+        ["Iron tail", "steel", 90, 0.75],
+        ["Brick break", "fighting", 75, 0.95],
+        ["Surf", "water", 90, 0.95]
+    ]],
+
+    ["Nidoking",
+        "https://img.pokemondb.net/sprites/black-white/anim/normal/nidoking.gif", 
+        "https://img.pokemondb.net/sprites/black-white/anim/back-normal/nidoking.gif",
+        366, [
+        ["Sludge wave", "poison", 90, 0.95],
+        ["Earth power", "ground", 90, 0.95],
+        ["Rock Slide", "rock", 75, 0.90],
+        ["Megahorn", "bug", 120, 0.85]
+    ]],
+
+    ["Machamp",
+        "https://img.pokemondb.net/sprites/black-white/anim/normal/machamp.gif", 
+        "https://img.pokemondb.net/sprites/black-white/anim/back-normal/machamp.gif",
+        384, [
+        ["Brick break", "fight", 75, 0.95],
+        ["Heavy slam", "steel", 85, 0.95],
+        ["Rock Slide", "rock", 75, 0.90],
+        ["Earthquake", "ground", 100, 0.95]
+    ]],
+
+    ["Gengar",
+        "https://img.pokemondb.net/sprites/black-white/anim/normal/gengar.gif", 
+        "https://img.pokemondb.net/sprites/black-white/anim/back-normal/gengar.gif",
+        324, [
+        ["Shadow ball", "ghost", 80, 0.95],
         ["Sludge bomb", "poison", 90, 0.95],
-        ["Earthquake", "ground", 100, 0.95],
-        ["Body slam", "normal", 85, 0.95]
+        ["Dark pulse", "dark", 80, 0.95],
+        ["Hyper beam", "normal", 150, 0.33]
+    ]],
+
+    ["Gyarados",
+        "https://img.pokemondb.net/sprites/black-white/anim/normal/gyarados-f.gif", 
+        "https://img.pokemondb.net/sprites/black-white/anim/back-normal/gyarados.gif",
+        394, [
+        ["Aqua tail", "water", 90, 0.90],
+        ["Crunch", "dark", 80, 0.95],
+        ["Dragon pulse", "dragon", 85, 0.95],
+        ["Hyper beam", "normal", 150, 0.33]
+    ]],
+
+    ["Lapras",
+        "https://img.pokemondb.net/sprites/black-white/anim/normal/lapras.gif", 
+        "https://img.pokemondb.net/sprites/black-white/anim/back-normal/lapras.gif",
+        464, [
+        ["Surf", "water", 90, 0.95],
+        ["Ice beam", "ice", 90, 0.95],
+        ["Dragon pulse", "dragon", 85, 0.95],
+        ["Hyper beam", "normal", 150, 0.33]
+    ]],
+
+    ["Snorlax",
+        "https://img.pokemondb.net/sprites/black-white/anim/normal/snorlax.gif", 
+        "https://img.pokemondb.net/sprites/black-white/anim/back-normal/snorlax.gif",
+        524, [
+        ["Body slam", "normal", 65, 0.95],
+        ["Heavy slam", "steel", 85, 0.95],
+        ["Lick", "ghost", 30, 0.95],
+        ["Hyper beam", "normal", 150, 0.33]
+    ]],
+
+    ["Dragonite",
+        "https://img.pokemondb.net/sprites/black-white/anim/normal/dragonite.gif", 
+        "https://img.pokemondb.net/sprites/black-white/anim/back-normal/dragonite.gif",
+        386, [
+        ["Dragon claw", "dragon", 80, 0.95],
+        ["Wing attack", "fight", 60, 0.95],
+        ["Hurricane", "fly", 110, 0.50],
+        ["Hyper beam", "normal", 150, 0.33]
+    ]],
+
+    ["Mewtwo",
+        "https://img.pokemondb.net/sprites/black-white/anim/normal/mewtwo.gif",
+        "https://img.pokemondb.net/sprites/black-white/anim/back-normal/mewtwo.gif",
+        416, [
+        ["Psystrike", "psychic", 100, 0.95],
+        ["Aura sphere", "fighting", 80, 0.95],
+        ["Shadow ball", "ghost", 80, 0.95],
+        ["Hyper beam", "normal", 150, 0.33]
     ]]
 ];
 
 const typeMatch = {
-    'Charizard': [['ground'], ['water', 'rock'], ['fire', 'grass', 'steel']],
-    'Blastoise': [[''], ['grass'], ['fire', 'water']],
-    'Venusaur': [['poison'], ['fire', 'fly', 'ice', 'steel'], ['grass', 'water']]
+    'Venusaur': [[''], ['fire', 'ice', 'fly', 'psychic'], ['water', 'electric', 'grass', 'fight', 'fairy']],
+    'Charizard': [['ground'], ['water', 'electric', 'rock'], ['fire', 'grass', 'fight', 'bug', 'steel', 'fairy']],
+    'Blastoise': [[''], ['electric', 'grass'], ['fire', 'water', 'ice', 'steel']],
+    'Pikachu': [[''], ['ground'], ['electric', 'fly', 'steel']],
+    'Nidoking': [['electric'], ['water', 'ice', 'ground', 'psychic'], ['fighting', 'poison', 'bug', 'rock', 'fairy']],
+    'Machamp': [[''], ['fly', 'psychic', 'fairy'], ['bug', 'rock', 'dark']],
+    'Gengar': [['normal', 'fighting'], ['ground', 'psychic', 'ghost', 'dark'], ['grass', 'poison', 'bug', 'fairy']],
+    'Gyarados': [['ground'], ['electric', 'rock'], ['fire', 'water', 'fighting', 'bug', 'steel']],
+    'Lapras': [['water'], ['electric', 'grass', 'fighting', 'rock'], ['ice']],
+    'Snorlax': [['ghost'], ['fighting'], ['']],
+    'Dragonite': [['ground'], ['ice', 'rock', 'dragon', 'fairy'], ['fire', 'water', 'grass', 'fighting', 'bug']],
+    'Mewtwo': [[''], ['ghost', 'dark', 'bug'], ['fight', 'psychic']]
 };
+
+
 function spawn(bool) {
-    const [name, sprite, hp, moves] = pkmList[(Math.random() * pkmList.length) | 0];
-    const pkm = new Pokemon(name, sprite, hp, moves);
+    const [name, sprite, sprite2, hp, moves] = pkmList[(Math.random() * pkmList.length) | 0];
+    const pkm = new Pokemon(name, sprite, sprite2, hp, moves);
 
     if (bool) {
         for (let i = 0; i < 4; i++) {
@@ -70,7 +181,7 @@ function spawn(bool) {
 
 const pk1 = spawn(true);
 const s1 = document.createElement('img');
-s1.src = pk1.sprite;
+s1.src = pk1.sprite2;
 document.getElementById('pk1').appendChild(s1);
 
 const hp1 = document.createElement('p');
@@ -260,7 +371,7 @@ function attack(move, attacker, receiver, hp, owner){
 function checkWinner(hp){
     let f = (pk1.hp <= 0) ? pk1 : (pk2.hp <= 0) ? pk2 : false;
     if(f){
-        alert('GAME OVER: ' + f.name +' derrotado!');
+        alert('GAME OVER: ' + f.name +' fué derrotado!');
         document.getElementById(hp).innerHTML = '<p>HP: 0/' + f.fullhp + '</p>';
         setTimeout(function(){
             location.reload();
