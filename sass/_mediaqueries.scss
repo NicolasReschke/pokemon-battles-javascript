@@ -1,24 +1,9 @@
-// @media screen and (min-width:320px){
-//     .footerContainer{
-//         .grupo1{
-//             width: 90%;
-//             grid-template-columns: 1fr;
-//             grid-gap: 10px;
-//             padding: 35px 0px;
-//             text-align: center;
-//             h5{
-//                 text-align: center;
-//             }
-//             .parrafoFooter{
-//                 text-align: center;
-//             }
-//         }
-//     }
-// }
 
 @media screen and (min-width:320px){
-    .footerContainer .grupo1{
+    .footerContainer{
         width: 100%;
+        max-width: 980px;
+        .grupo1{
         margin: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -26,5 +11,6 @@
         padding: 10px 0px;
         text-align: center;
         align-items: center;
+        }
     }
 }

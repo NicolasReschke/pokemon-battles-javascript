@@ -56,6 +56,12 @@ p {
   width: 50%;
 }
 .pokemon1 img {
+  position: relative;
+  width: 150px;
+  height: 140px;
+}
+.pokemon1 .attackBox1 img {
+  position: absolute;
   width: 150px;
   height: 140px;
 }
@@ -73,6 +79,11 @@ p {
 .pokemon2 img {
   width: 130px;
   height: 120px;
+}
+.pokemon2 .attackBox2 img {
+  position: absolute;
+  width: 150px;
+  height: 140px;
 }
 
 .botones {
@@ -106,7 +117,6 @@ p {
 }
 
 .footerContainer {
-  width: 980px;
   background-color: #212529;
   margin: 0 auto;
   margin-top: 15px;
@@ -182,8 +192,11 @@ p {
 }
 
 @media screen and (min-width: 320px) {
-  .footerContainer .grupo1 {
+  .footerContainer {
     width: 100%;
+    max-width: 980px;
+  }
+  .footerContainer .grupo1 {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);

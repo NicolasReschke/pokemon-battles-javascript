@@ -55,8 +55,16 @@ p{
     text-align: center;
     width: 50%;
     img{
+        position: relative;
         width: 150px;
         height: 140px;
+    }
+    .attackBox1{
+        img{
+            position: absolute;
+            width: 150px;
+            height: 140px;
+        }
     }
 }
 
@@ -72,6 +80,13 @@ p{
     img{
         width: 130px;
         height: 120px;
+    }
+    .attackBox2{
+        img{
+            position: absolute;
+            width: 150px;
+            height: 140px;
+        }
     }
 }
 
